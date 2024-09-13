@@ -33,7 +33,7 @@ body {
       'bottom bottom bottom bottom bottom bottom';
     gap: 1px;
     background-color: grey;
-    padding: 1px;
+    padding: 10px;
   }
   
   .grid-container > div {

@@ -31,7 +31,7 @@ body {
       'left left middle middle right right'
       'left left middle middle right right'
       'bottom bottom bottom bottom bottom bottom';
-    gap: 1px;
+    gap: 10px;
     background-color: grey;
     padding: 10px;
   }

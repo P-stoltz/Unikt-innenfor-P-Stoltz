@@ -9,7 +9,7 @@ body {
     margin-left: 400px;
   }
   p {
-    margin-left: 400px;
+    margin-left: 0px;
   }
 
   a {
@@ -27,19 +27,35 @@ body {
     border-radius: 25px;
     background: #73AD21;
     padding: 20px;
-    width: 200px;
+    width: auto;
     height: auto;
   }
 
-  .flex-container {
-    display: flex;
-    background-color: darkgray;
-    box-shadow: 5px 5px 5px 8px rgba(0, 0, 0, 0.2);
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
   }
   
-  .flex-container > div {
-    background-color: #f1f1f1;
-    margin: 5px;
-    padding: 10px;
-    font-size: 10px;
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  
+  .item2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+  
+  .item5 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
   }

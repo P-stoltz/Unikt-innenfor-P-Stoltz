@@ -20,25 +20,14 @@ body {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg");
   }
 
-  .item1 { grid-area: left; }
-  .item2 { grid-area: middle; }
-  .item3 { grid-area: right; }
-  .item4 { grid-area: bottom; }
-
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-      'left left middle middle right right'
-      'left left middle middle right right'
-      'bottom bottom bottom bottom bottom bottom';
-    gap: 10px;
-    background-color: grey;
-    padding: 10px;
+  .flex-container {
+    display: flex;
+    background-color: DodgerBlue;
   }
   
-  .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
     font-size: 30px;
   }

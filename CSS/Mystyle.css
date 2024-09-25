@@ -23,7 +23,7 @@ body {
   .flex-container {
     display: flex;
     background-color: DodgerBlue;
-    box-shadow: black rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.2);
   }
   
   .flex-container > div {

@@ -41,6 +41,8 @@ body {
     background-color: #2196F3;
     padding: 10px;
   }
+
+  .item1 { grid-area: header; }
   
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
@@ -60,6 +62,11 @@ body {
   }
   
   .item5 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
+
+  .item6 {
     grid-column: 1 / span 3;
     grid-row: 3;
   }

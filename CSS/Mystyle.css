@@ -44,7 +44,6 @@ body {
   .item1 { grid-area: header; }
   
   .grid-item {
-    background-color: lightgreen;
     text-align: center;
     padding: 0px;
     font-size: 30px;
@@ -72,6 +71,12 @@ body {
     font-size: 30px;
   }
   .item6 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    margin: -19px;
+    margin-right: 19px;
+  }
+  .item7 {
     grid-column: 1 / span 3;
     grid-row: 3;
     margin: -19px;

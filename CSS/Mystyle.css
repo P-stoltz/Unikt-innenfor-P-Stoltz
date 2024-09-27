@@ -66,6 +66,12 @@ body {
     grid-row: 3;
   }
 
+  .grid-item2 {
+    background-color: lightgreen;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
   .item6 {
     grid-column: 1 / span 3;
     grid-row: 3;

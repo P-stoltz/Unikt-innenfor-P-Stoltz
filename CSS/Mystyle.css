@@ -3,9 +3,6 @@
 body {
     background-color: lightblue;
   }
-  body{
-    height: 2000px;
-  }
   
   h1 {
     color: black;
@@ -78,7 +75,7 @@ body {
     margin: -19px;
     margin-right: 19px;
   }
-  
+
   ul {
     list-style-type: none;
     margin: 0;

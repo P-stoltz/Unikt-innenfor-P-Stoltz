@@ -78,10 +78,20 @@ body {
     margin: -19px;
     margin-right: 19px;
   }
-  .item7 {
-    grid-column: 1 / span 3;
-    grid-row: 3;
-    margin-top: 0px;
-    margin-right: 0px;
-    text-align: left;
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
   }

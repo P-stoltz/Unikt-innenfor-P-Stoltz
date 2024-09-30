@@ -20,12 +20,13 @@ body {
 
   }
   h1 {
-    font-size: 150px;
-    margin-left: 350px;
+    font-size: 120px;
+    margin-top: -600px;
+    margin-left: 0px;
   }
   body {
     background-color: lightgreen;
-    width: 100px;
+    
   }
 
   #rcorners1 {
@@ -81,5 +82,6 @@ body {
     grid-column: 1 / span 3;
     grid-row: 3;
     margin-top: 0px;
-    margin-right: 1300px;
+    margin-right: 0px;
+    text-align: left;
   }

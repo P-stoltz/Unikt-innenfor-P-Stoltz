@@ -6,15 +6,15 @@ body {
   
   h1 {
     color: black;
-    margin-left: 400px;
+    margin-left: 0px;
     font-size: 120px;
-    margin-top: -700px;
+    margin-top: -600px;
   }
   p {
     margin-left: 0px;
   }
 
-  a {
+  a { 
     margin-left: 0px;
 
   }

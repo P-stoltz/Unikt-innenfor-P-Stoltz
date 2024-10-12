@@ -5,7 +5,9 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+p {
+  font-size: large;
+}
 .topnav {
   overflow: hidden;
   background-color: #381e15;

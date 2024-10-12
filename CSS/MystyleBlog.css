@@ -6,7 +6,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 p {
-  font-size: large;
+  font-size: 20px;
+  margin-right: 700px;
+}
+h1 {
+  margin-right: 700px;
+
 }
 .topnav {
   overflow: hidden;

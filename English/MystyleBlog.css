@@ -15,7 +15,7 @@ h1 {
 }
 .topnav {
   overflow: hidden;
-  background-color: #381e15;
+  background-color:red
 }
 
 .topnav a {
@@ -33,7 +33,7 @@ h1 {
 }
 
 .topnav a.active {
-  background-color: #381e15 ;
+  background-color: red;
   color: white;
 }
 .dropbtn {
@@ -69,7 +69,7 @@ h1 {
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #381e15; }
+.dropdown:hover .dropbtn {background-color:red }
 
 .grid-container {
   display: grid;

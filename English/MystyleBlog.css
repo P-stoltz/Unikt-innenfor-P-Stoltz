@@ -4,7 +4,8 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(255, 197, 197);
+  background-image: url(../BILDER/pexels-polina-kovaleva-7692345.jpg);
+  background-size: 100% auto;
 }
 p {
   font-size: 20px;
@@ -16,7 +17,7 @@ h1 {
 }
 .topnav {
   overflow: hidden;
-  background-color:red
+  background-color:darkred
 }
 
 .topnav a {
@@ -34,7 +35,7 @@ h1 {
 }
 
 .topnav a.active {
-  background-color: red;
+  background-color: darkred;
   color: white;
 }
 .dropbtn {

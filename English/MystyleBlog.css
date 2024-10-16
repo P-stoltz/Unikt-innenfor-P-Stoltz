@@ -71,7 +71,7 @@ h1 {
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color:red }
+.dropdown:hover .dropbtn {background-color:darkred }
 
 .grid-container {
   display: grid;

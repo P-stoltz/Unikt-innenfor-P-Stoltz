@@ -141,3 +141,8 @@ h1 {
   grid-row: 1;
   background-color:coral ;
 }
+
+.item12 {
+  grid-column: 2;
+  grid-row: 2/ span 2;
+}

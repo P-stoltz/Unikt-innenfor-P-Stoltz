@@ -75,8 +75,8 @@ h1 {
 
 .grid-container {
   display: grid;
-  gap: 10px;
-  padding: 10px;
+  gap: -100px;
+  padding:10px;
 }
 
 .grid-item {
@@ -127,19 +127,19 @@ h1 {
 .item9 {
   grid-column: 1 ;
   grid-row: 1;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgb(255, 255, 255, 0)
 }
 
 .item10 {
   grid-column: 2 ;
   grid-row: 1;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgb(255, 255, 255, 0)
 }
 
 .item11 {
   grid-column: 1/ span 3;
   grid-row: 1;
-  background-color:coral ;
+  background-color: #d6767680;
 }
 
 .item12 {

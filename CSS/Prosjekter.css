@@ -73,6 +73,7 @@ body {
   .grid-container {
     display: grid;
     gap: -100px;
+    background-color: rgba(226, 139, 139);
     padding:10px;
   }
   

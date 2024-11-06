@@ -4,14 +4,7 @@
 
 }*/
 
-let betingelse = true
-let tall = 0
-let i = 0
-while(tall < 100) {
 
-    tall = tall +1;
-    console.log("tall er " + tall)
-    i += tall
+for (let i = 1; i <= 10; i++) {
+    console.log("iteration:", i);
 }
-
-console.log(i)

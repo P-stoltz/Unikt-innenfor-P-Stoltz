@@ -1,24 +1,3 @@
 h1 {
     font-size: 120px;
 }
-.grid-container { /* grid container */
-    display: grid;
-    gap: 10px;
-    background-color: rgb(241, 182, 119);
-    padding:10px;
-  }
-  
-  .grid-item { /* de forskjellige grid itemsene */
-    background-color: rgba(248, 204, 158, 0.8);
-    text-align: center;
-    padding: 20px;
-    font-size: 30px;
-    border-radius: 15px;
-  }
-  
-  .bigtext {
-    grid-column: 1/ span 3;
-    grid-row: 1;
-    background-color: rgba(250, 213, 172, 0.8);
-    font-size: 60px;
-  }

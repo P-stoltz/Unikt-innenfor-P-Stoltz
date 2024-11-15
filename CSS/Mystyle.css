@@ -79,6 +79,12 @@ h1 { /* Endringer på h1 */
   border-radius: 15px;
 }
 
+.top {
+  grid-column: 1/ span 3;
+  grid-row: 1;
+  background-color: #d6767680;
+}
+
 .left1 {
   grid-column: 1;
   grid-row: 2;

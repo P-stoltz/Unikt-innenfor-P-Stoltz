@@ -99,4 +99,12 @@ h1 { /* Endringer på h1 */
   background-color: rgba(250, 213, 172, 0.8);
 }
 
-.
+.flat1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.flat2 {
+  grid-column: 1;
+  grid-row: 2;
+}

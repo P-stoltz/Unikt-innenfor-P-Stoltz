@@ -102,7 +102,7 @@ body {
     grid-row: 2;
   }
 
-  .item11 {
+  .bigtext {
     grid-column: 1/ span 3;
     grid-row: 1;
     background-color: #d6767680;

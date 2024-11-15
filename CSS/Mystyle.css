@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../Bilder/pexels-fwstudio-33348-129731.jpg);
   background-size: 100% auto;
 }
 p { /* Endringer på p */
@@ -10,7 +11,7 @@ a { /* Endringer på a */
   font-size: 20px;
 }
 h1 { /* Endringer på h1 */
-  font-size: 120px;
+  font-size: 60px;
 }
 .topnav { /* farge på topnav */
   overflow: hidden;
@@ -66,12 +67,12 @@ h1 { /* Endringer på h1 */
 .grid-container { /* grid container */
   display: grid;
   gap: 0;
-  background-color: rgba(226, 139, 139);
+  background-color: rgb(241, 182, 119);
   padding:10px;
 }
 
 .grid-item { /* de forskjellige grid itemsene */
-  background-color: rgba(226, 139, 139, 0.8);
+  background-color: rgba(248, 204, 158, 0.8);
   text-align: center;
   padding: 20px;
   font-size: 30px;
@@ -95,5 +96,5 @@ h1 { /* Endringer på h1 */
 .item11 {
   grid-column: 1/ span 3;
   grid-row: 1;
-  background-color: #d6767680;
+  background-color: rgba(250, 213, 172, 0.8);
 }

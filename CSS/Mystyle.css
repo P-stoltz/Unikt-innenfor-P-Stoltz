@@ -77,16 +77,8 @@ h1 { /* Endringer på h1 */
   padding: 20px;
   font-size: 30px;
   border-radius: 15px;
-  width:auto
-  height:auto
 }
 
-.bigtext {
-  grid-column: 1/ span 3;
-  grid-row: 1;
-  background-color: rgba(250, 213, 172, 0.8);
-
-}
 .left1 {
   grid-column: 1;
   grid-row: 2;

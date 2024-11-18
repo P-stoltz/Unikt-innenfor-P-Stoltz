@@ -77,17 +77,22 @@ h1 { /* Endringer på h1 */
   padding: 20px;
   font-size: 30px;
   border-radius: 15px;
+  height: auto;
+  width: 425px;
 }
 
 .top {
   grid-column: 1/ span 3;
   grid-row: 1;
   background-color: #d6767680;
+  height: auto;
+  width: auto;
 }
 
 .left1 {
   grid-column: 1;
   grid-row: 2;
+
 }
 
 .middle1 {

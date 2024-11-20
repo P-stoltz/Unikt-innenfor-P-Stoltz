@@ -64,21 +64,50 @@ h1 { /* Endringer på h1 */
 
 .dropdown:hover .dropbtn {background-color:darkred }
 
-.grid-container { /* grid container */
+/* Grid Layout */
+.grid-container {
   display: grid;
   gap: 10px;
   background-color: rgb(241, 182, 119);
-  padding:10px;
+  padding: 10px;
+  grid-template-columns: repeat(3, 1fr); /* Tre like columns */
 }
 
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr; /* To columns */
+  }
+  p { 
+    font-size: 16px; /* Mindre paragraph font size */
+  }
+
+  h1 { 
+    font-size: 40px; /* Mindre heading font size */
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Singel column */
+  }
+  p { 
+    font-size: 12px; /* Mindre paragraph font size */
+  }
+
+  h1 { 
+    font-size: 24px; /* Mindre top font size */
+  }
+  .grid-item {
+    width: auto; /* Fjerner fixed width for å kunne endre størrelse */
+  }
+}
 .grid-item { /* de forskjellige grid itemsene */
   background-color: rgba(248, 204, 158, 0.8);
   text-align: center;
   padding: 20px;
   font-size: 30px;
   border-radius: 15px;
-  height: auto;
-  width: 30%;
+  align-items: center;
 }
 
 .top {

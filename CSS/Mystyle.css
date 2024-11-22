@@ -6,12 +6,18 @@ body {
 }
 p { /* Endringer på p */
   font-size: 20px;
+  text-align: center;
 }
 a { /* Endringer på a */
   font-size: 20px;
 }
 h1 { /* Endringer på h1 */
   font-size: 60px;
+}
+td, th {
+  border: 3px solid #d6767680;
+  text-align: center;
+  padding: 20px;
 }
 .topnav { /* farge på topnav */
   overflow: hidden;
@@ -118,6 +124,10 @@ h1 { /* Endringer på h1 */
   width: auto;
 }
 
+.tbl {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+}
 .left1 {
   grid-column: 1;
   grid-row: 2;

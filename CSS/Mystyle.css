@@ -79,6 +79,19 @@ td, th {
   grid-template-columns: repeat(3, 1fr); /* Tre like columns */
 }
 
+@media (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr; /* tre columns */
+  }
+  p { 
+    font-size: 22px; /* Mindre paragraph font size */
+  }
+
+  h1 { 
+    font-size: 60px; /* Mindre heading font size */
+  }
+}
+
 @media (max-width: 800px) {
   .grid-container {
     grid-template-columns: 1fr 1fr; /* To columns */

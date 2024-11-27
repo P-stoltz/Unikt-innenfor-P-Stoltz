@@ -13,6 +13,7 @@ a { /* Endringer på a */
 }
 h1 { /* Endringer på h1 */
   font-size: 60px;
+  text-align: center;
 }
 td, th {
   border: 3px solid #d6767680;

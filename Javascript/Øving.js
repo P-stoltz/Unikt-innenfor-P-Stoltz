@@ -8,4 +8,7 @@ for (let i = 1; i <= 50; i += 1){
     else if (i % 5 === 0) {
         console.log(i + "buzz")
     }
+    else {
+        console.log(i)
+    }
 }

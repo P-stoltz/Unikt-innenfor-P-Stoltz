@@ -16,7 +16,7 @@ h1 { /* Endringer på h1 */
   text-align: center;
 }
 td, th {
-  border: 3px solid #d6767680;
+  border: 3px solid #381e15;
   text-align: center;
   padding: 20px;
 }
@@ -80,11 +80,13 @@ td, th {
   border-radius: 5px;
   text-align: center;
   transition: background-color 0.3s ease;
+  transition: color 0.3s;
 }
 
 /* Change color on hover */
 .button:hover {
-  background-color: #d6767680;
+  background-color: rgb(250, 207, 162);
+  color: black;
 }
 
 /* Grid Layout */
@@ -149,7 +151,7 @@ td, th {
 .top {
   grid-column: 1/ span 3;
   grid-row: 1;
-  background-color: #d6767680;
+  background-color: #d35b5b80;
   height: auto;
   width: auto;
 }

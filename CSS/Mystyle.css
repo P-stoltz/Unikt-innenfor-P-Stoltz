@@ -91,7 +91,7 @@ td, th {
 .grid-container {
   display: grid;
   gap: 10px;
-  background-color: rgb(241, 182, 119);
+  background-color: rgb(250, 207, 162);
   padding: 10px;
   grid-template-columns: repeat(3, 1fr); /* Tre like columns */
 }
@@ -138,7 +138,7 @@ td, th {
   }
 }
 .grid-item { /* de forskjellige grid itemsene */
-  background-color: rgba(248, 204, 158, 0.8);
+  background-color: #d6767680;
   text-align: center;
   padding: 20px;
   font-size: 30px;

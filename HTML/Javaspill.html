@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
- 
+<html lang="no"> <!-- Starter HTML-dokumentet og setter språket til norsk -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javaspill</title>
-    <script src="../Javascript/Spill.js" defer></script> <!-- Linker html med java-fil -->
-    <link rel="stylesheet" href="../CSS/Mystyle.css">
+    <link rel="stylesheet" href="../CSS/Mystyle.css"> <!-- Knytter til en ekstern CSS-fil for styling -->
+    <title>Javaspill</title> <!-- Viser tittelen i fanen-->
+    <script src="../Javascript/Spill.js" defer></script>
+    <meta charset="utf-8"> <!-- Angir tegnsettet til UTF-8 -->
 </head>
- 
+
 <body>
-    
-    <div class="topnav"> <!-- Topnav navigasjonsbar-->
+    <div class="topnav"> <!-- Topnav navigasjonsbar -->
         <a href="../HTML/Javahome.html">Tilbake</a>
     </div>
+
+    <div id="score">0</div>
+    <button id="clickButton">Klikk meg!</button>
+</body>

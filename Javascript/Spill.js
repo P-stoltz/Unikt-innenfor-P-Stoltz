@@ -1,11 +1,21 @@
-function sumArray(numbers) {
-    let sum = 0
-    for(let i = 0; i < numbers.length; i += 1){
-        console.log(numbers[i])
-        sum = sum + numbers[i]
-    }
-    return sum
-}
+let score = 0;
+  let timerStarted = false;
+  let timer;
 
-let list = [1, 2, 3, 4, 5];
-console.log(sumArray(list))
+  const scoreDisplay = document.getElementById('score');
+  const button = document.getElementById('clickButton');
+
+  button.addEventListener('click', () => {
+    if (!timerStarted) {
+      timerStarted = true;
+      timer = setTimeout(() => {
+        alert(`Tid ute! Poeng: ${score}`);
+        score = 0;
+        scoreDisplay.textContent = score;
+        timerStarted = false; // Restart spill
+      }, 5000); // 5 sekunder
+    }
+
+    score++;
+    scoreDisplay.textContent = score;
+  });

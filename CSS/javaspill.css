@@ -1,3 +1,18 @@
 html, body {
     touch-action: manipulation;
 }
+
+#message {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeInOut 3s forwards;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }

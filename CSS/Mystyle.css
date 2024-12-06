@@ -89,6 +89,17 @@ td, th {
   color: black;
 }
 
+.clickButton{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#381e15;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s;
+}
 /* Grid Layout */
 .grid-container {
   display: grid;

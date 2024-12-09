@@ -44,6 +44,30 @@ td, th {
   background-color: #381e15;
 }
 
+.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  background-color: #381e15;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  text-align: left;
+}
+
+.sidenav a {
+  display: block;
+  color: #ffffff;
+  padding: 1px 0px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+.sidenav a:hover {
+  background-color: #555;
+  color: white;
+}
 .dropdown { 
   position: relative;
   display: inline-block;
@@ -100,11 +124,42 @@ td, th {
   transition: background-color 0.3s ease;
   transition: color 0.3s;
 }
+
+/*Flexbox Layout */
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color:#d67676;
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
 /* Grid Layout */
 .grid-container {
   display: grid;
   gap: 10px;
-  background-color: rgb(250, 207, 162);
+  background-color: rgb(250, 207, 162 0);
   padding: 10px;
   grid-template-columns: repeat(3, 1fr); /* Tre like columns */
 }
@@ -121,35 +176,36 @@ td, th {
     font-size: 60px; /* Mindre heading font size */
   }
 }
-
+/* Tatt av for nå, skal kanskje bruke senere.
 @media (max-width: 800px) {
   .grid-container {
-    grid-template-columns: 1fr 1fr; /* To columns */
+    grid-template-columns: 1fr 1fr; /* To columns 
   }
   p { 
-    font-size: 16px; /* Mindre paragraph font size */
+    font-size: 16px; /* Mindre paragraph font size 
   }
 
   h1 { 
-    font-size: 40px; /* Mindre heading font size */
+    font-size: 40px; /* Mindre heading font size 
   }
 }
 
 @media (max-width: 600px) {
   .grid-container {
-    grid-template-columns: 1fr; /* Singel column */
+    grid-template-columns: 1fr; /* Singel column 
   }
   p { 
-    font-size: 10px; /* Mindre paragraph font size */
+    font-size: 10px; /* Mindre paragraph font size 
   }
 
   h1 { 
-    font-size: 24px; /* Mindre top font size */
+    font-size: 24px; /* Mindre top font size 
   }
   .grid-item {
-    width: auto; /* Fjerner fixed width for å kunne endre størrelse */
+    width: auto; /* Fjerner fixed width for å kunne endre størrelse 
   }
 }
+*/
 .grid-item { /* de forskjellige grid itemsene */
   background-color: #d6767680;
   text-align: center;
@@ -162,7 +218,7 @@ td, th {
 .top {
   grid-column: 1/ span 3;
   grid-row: 1;
-  background-color: #d35b5b80;
+  background-color: #ad5151;
   height: auto;
   width: auto;
 }

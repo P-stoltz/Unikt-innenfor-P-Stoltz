@@ -15,6 +15,10 @@ h1 { /* Endringer på h1 */
   font-size: 60px;
   text-align: center;
 }
+h2 { /* Endringer på h1 */
+  font-size: 130px;
+  text-align: center;
+}
 td, th {
   border: 5px solid #381e15;
   text-align: center;
@@ -145,7 +149,7 @@ td, th {
 }
 
 .flex-item-right {
-  background-color:#d67676;
+  background-color:#b68551;
   padding: 10px;
   flex: 50%;
 }
@@ -208,7 +212,7 @@ td, th {
 }
 */
 .grid-item { /* de forskjellige grid itemsene */
-  background-color: #d6767680;
+  background-color: #b68551;
   text-align: center;
   padding: 20px;
   font-size: 30px;
@@ -219,7 +223,7 @@ td, th {
 .top {
   grid-column: 1/ span 3;
   grid-row: 1;
-  background-color: #ad5151;
+  background-color: #b1916e;
   height: auto;
   width: auto;
 }

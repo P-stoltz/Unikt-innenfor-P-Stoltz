@@ -16,9 +16,10 @@ h1 { /* Endringer på h1 */
   text-align: center;
 }
 td, th {
-  border: 3px solid #381e15;
+  border: 5px solid #381e15;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+  font-size: 25px;
 }
 .topnav { /* farge på topnav */
   overflow: hidden;
@@ -48,7 +49,7 @@ td, th {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: auto;
+  width: 9%;
   background-color: #381e15;
   height: 100%;
   position: fixed;
@@ -163,20 +164,20 @@ td, th {
   padding: 10px;
   grid-template-columns: repeat(3, 1fr); /* Tre like columns */
 }
-
+/*Tatt av for nå, skal kanskje bruke senere.
 @media (max-width: 1000px) {
   .grid-container {
-    grid-template-columns: 1fr 1fr 1fr; /* tre columns */
+    grid-template-columns: 1fr 1fr 1fr; /* tre columns 
   }
   p { 
-    font-size: 22px; /* Mindre paragraph font size */
+    font-size: 22px; /* Mindre paragraph font size 
   }
 
   h1 { 
-    font-size: 60px; /* Mindre heading font size */
+    font-size: 60px; /* Mindre heading font size 
   }
 }
-/* Tatt av for nå, skal kanskje bruke senere.
+
 @media (max-width: 800px) {
   .grid-container {
     grid-template-columns: 1fr 1fr; /* To columns 

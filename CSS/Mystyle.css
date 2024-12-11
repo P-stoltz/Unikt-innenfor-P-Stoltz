@@ -226,19 +226,26 @@ td, th {
 .top {
   grid-column: 1/ span 3;
   grid-row: 1;
-  background-color: #b1916e;
+  background-color: rgb(177, 145, 110);
   height: auto;
   width: auto;
 }
 
+.topinv {
+  grid-column: 1/ span 3;
+  grid-row: 1;
+  background-color: rgb(177, 145, 110, 0);;
+  height: auto;
+  width: auto;
+}
 .tbl {
   grid-column: 1 / span 3;
   grid-row: 2;
 }
+
 .left1 {
   grid-column: 1;
   grid-row: 2;
-
 }
 
 .middle1 {

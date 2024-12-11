@@ -24,6 +24,7 @@ td, th {
   text-align: center;
   padding: 10px;
   font-size: 25px;
+  margin-left: 9%;
 }
 .topnav { /* farge på topnav */
   overflow: hidden;

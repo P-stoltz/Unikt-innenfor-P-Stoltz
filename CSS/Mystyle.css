@@ -23,8 +23,9 @@ td, th {
   border: 5px solid #381e15;
   text-align: center;
   padding: 10px;
-  font-size: 25px;
+  font-size: 20px;
   margin-left: 9%;
+
 }
 .topnav { /* farge på topnav */
   overflow: hidden;

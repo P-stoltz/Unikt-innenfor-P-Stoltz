@@ -157,10 +157,12 @@ td, th {
   flex: 50%;
 }
 
-/* Responsive layout - makes a one column-layout instead of two-column layout */
+/* media queries for flex-box*/
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
   }
 }
 /* Grid Layout */

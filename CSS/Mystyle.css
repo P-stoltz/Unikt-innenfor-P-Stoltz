@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(../Bilder/pexels-fwstudio-33348-129731.jpg);
-  background-size: 100% auto;
+  background-image: url(../Bilder/Blåbakgrunn.jpg);
+  background-size: auto;
 }
 p { /* Endringer på p */
   font-size: 20px;
@@ -62,6 +62,8 @@ td, th {
   overflow: auto;
   text-align: left;
   display: 10%;
+  justify-content: left;
+  align-items: left;
 }
 
 .sidenav :hover {
@@ -140,45 +142,39 @@ td, th {
 }
 
 /*Flexbox Layout */
-* {
-  box-sizing: border-box;
-}
-
 .flex-container {
   display: flex;
-  flex-direction: row;
-  font-size: 30px;
+  flex-direction: row; /* Horisontal retning som standard */
+  flex-wrap: wrap;    /* Tillater at elementene bryter til neste linje */
+  gap: 10px;
+  max-width: 90%;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.flex-item {
+  flex: 1 1 auto; /* Dynamisk størrelse, men tar opp så mye plass som mulig */
+  min-width: 150px; /* Minimum bredde for hver boks */
+  max-width: 300px; /* Maks bredde for hver boks */
+  background-color: #007BFF;
+  color: #ffffff;
+  padding: 20px;
   text-align: center;
-  width: 100vw;
-  border-radius: 15px;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-.flex-item-left {
-  background-color: #f1f1f1;
-  padding: 10px;
-  flex: 50%;
-}
-
-.flex-item-middle {
-  background-color:#b68551;
-  padding: 10px;
-  width: 100%;
-  border-radius: 15px;
-}
-
-.flex-item-right {
-  background-color:#b68551;
-  padding: 10px;
-  flex: 50%;
-}
-
-/* media queries for flex-box*/
-@media (max-width: 800px) {
+@media (max-width: 300px) {
   .flex-container {
-    flex-direction: column;
-    width: 100%;
-    flex-wrap: wrap;
-  }
+    justify-content: center; /* Sentraliserer elementene vertikalt når de bryter */
+}
+
+.flex-item {
+    flex: 1 1 100%; /* Hver boks tar opp hele bredden */
+}
 }
 /* Grid Layout */
 .grid-container {

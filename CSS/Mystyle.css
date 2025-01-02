@@ -27,6 +27,15 @@ td, th {
   margin-left: 9%;
 
 }
+
+img {
+  position: absolute; /* Lar deg plassere bildet relativt til nærmeste posisjonerte element eller vinduet */
+  left: 90%; /* Flytter bildet 90% til høyre fra venstre kant av skjermen */
+  transform: translateX(-50%); /* Justerer bildet for å sentrere det i x-aksen */
+  top: 30%; /* Valgfritt: Plasserer bildet midt i høyden */
+  transform: translate(-50%, -50%); /* Justerer bildet til å være midtstilt på både x- og y-aksen */
+}
+
 .topnav { /* farge på topnav */
   overflow: hidden;
   background-color:#381e15;
@@ -51,39 +60,60 @@ td, th {
   background-color: #381e15;
 }
 
+/* Container for sidenav and toggle button */
+#sidenav-container {
+  position: relative;
+}
+
+#toggle-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background-color: #1c285c;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#toggle-button:hover {
+  background-color: #555;
+}
+
+#toggle-button.active {
+  background-color: #555; /* Fortsetter å være grå når aktiv */
+}
+
+
 .sidenav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 9%;
-  background-color: #381e15;
+  width: 200px; /* Full width når utvidet */
+  background-color: #1c285c;
   height: 100%;
   position: fixed;
   overflow: auto;
   text-align: left;
-  display: 10%;
-  justify-content: left;
-  align-items: left;
+  transform: translateX(-100%); /* Skjult som standard */
+  transition: transform 0.3s ease;
 }
 
-.sidenav :hover {
-  background-color: #555;
-  color: white;
-  display: all;
+.sidenav.open {
+  transform: translateX(0); /* Vises */
 }
 
 .sidenav a {
   display: block;
   color: #ffffff;
-  padding: 1px 0px;
+  padding: 8px 16px;
   text-decoration: none;
 }
 
-/* Change the link color on hover */
 .sidenav a:hover {
   background-color: #555;
   color: white;
 }
+
 .dropdown { 
   position: relative;
   display: inline-block;
@@ -144,27 +174,27 @@ td, th {
 /*Flexbox Layout */
 .flex-container {
   display: flex;
-  flex-direction: row; /* Horisontal retning som standard */
-  flex-wrap: wrap;    /* Tillater at elementene bryter til neste linje */
-  gap: 10px;
-  max-width: 90%;
-  margin: auto;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;        /* Tillat bryting */
+    justify-content: center; /* Sentrer boksene horisontalt */
+    align-items: stretch;   /* Strekk boksene til samme høyde */
+    gap: 10px;               /* Mellomrom mellom boksene */
+    max-width: 100%;
 }
 
 .flex-item {
-  flex: 1 1 auto; /* Dynamisk størrelse, men tar opp så mye plass som mulig */
-  min-width: 150px; /* Minimum bredde for hver boks */
-  max-width: 300px; /* Maks bredde for hver boks */
-  background-color: #007BFF;
-  color: #ffffff;
-  padding: 20px;
-  text-align: center;
-  border-radius: 4px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  flex: 1 0 150px;        /* Minimum bredde på 150px, tilpass etter plass */
+    max-width: 200px;       /* Maks bredde på 200px */
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;          /* Innvendig polstring */
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* Sentrer tekst horisontalt */
+    align-items: center;     /* Sentrer tekst vertikalt */
+    text-align: center;
+    flex-direction: column; /* Tillater flere tekstlinjer */
 }
 
 @media (max-width: 300px) {
@@ -182,7 +212,6 @@ td, th {
   gap: 10px;
   background-color: rgb(250, 207, 162 0);
   padding: 10px;
-  margin-left: 9%;
   grid-template-columns: repeat(3, 1fr); /* Tre like columns */
 }
 /*Tatt av for nå, skal kanskje bruke senere.

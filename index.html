@@ -2,22 +2,42 @@
 <html lang="no"> <!-- Starter HTML-dokumentet og setter språket til norsk -->
 <head>
     <link rel="stylesheet" href="../Unikt-innenfor-PStoltz/CSS/Mystyle.css"> <!-- Knytter til en ekstern CSS-fil for styling -->
+    <script src="../Unikt-innenfor-PStoltz/Javascript/Nettside.js"></script>
     <title>Peter Stoltz</title> <!-- Viser tittelen i fanen-->
 
     <meta charset="utf-8"> <!-- Angir tegnsettet til UTF-8 -->
 </head>
 <body>
-    <div class="sidenav"> <!-- Topnav navigasjonsbar -->
-        <a href="../Unikt-innenfor-PStoltz/index.html"><p>Hjem</p></a>
-        <a href="../Unikt-innenfor-PStoltz/HTML/Om-meg.html"><p>Om</p></a>
-        <a href="../Unikt-innenfor-PStoltz/HTML/Prosjekter.html"><p>Prosjekter</p></a>
-        <a href="../Unikt-innenfor-PStoltz/HTML/Logg.html"><p>Logg</p></a>
+    <div id="sidenav-container">
+        <button id="toggle-button">☰</button>
+        <div class="sidenav"> <!-- Topnav navigasjonsbar -->
+            <a href="../Unikt-innenfor-PStoltz/index.html"><p>Hjem</p></a>
+            <a href="../Unikt-innenfor-PStoltz/HTML/Om-meg.html"><p>Om</p></a>
+            <a href="../Unikt-innenfor-PStoltz/HTML/Prosjekter.html"><p>Prosjekter</p></a>
+            <a href="../Unikt-innenfor-PStoltz/HTML/Logg.html"><p>Logg</p></a>
+        </div>
     </div>
+    
 
     <div class="grid-container">
         <div class="grid-item topinv">
             <h2>Peter Stoltz</h2> <!-- Overskriften-->
         </div> 
+    </div>
+    <img src="../Unikt-innenfor-PStoltz/Bilder/Thinks-hes-him.jpeg">
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>Hallo! Jeg heter Peter Stoltz og dette er min nettside!</p>
+        </div>
+        <div class="flex-item">
+            <p>Denne nettsiden er laget for å vise hva jeg har lært i løpet av vg1 på IT og medieproduksjon på Amalie Skram VGS.</p>
+        </div>
+        <div class="flex-item">
+            <p>Jeg har lært om HTML, CSS, JavaScript og andre teknologier som brukes til å lage nettsider.</p>
+        </div>
+        <div class="flex-item">
+            <p>Bla gjerne gjennom de forskjellige undersidene for å se hva jeg har lært og de forskjellige prosjektene vi har holdt på med.</p>
+        </div>
     </div>
   
 </body>

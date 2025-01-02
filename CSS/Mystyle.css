@@ -28,12 +28,23 @@ td, th {
 
 }
 
-img {
+#Venstrehjørnebilde {
   position: absolute; /* Lar deg plassere bildet relativt til nærmeste posisjonerte element eller vinduet */
   left: 90%; /* Flytter bildet 90% til høyre fra venstre kant av skjermen */
-  transform: translateX(-50%); /* Justerer bildet for å sentrere det i x-aksen */
-  top: 30%; /* Valgfritt: Plasserer bildet midt i høyden */
   transform: translate(-50%, -50%); /* Justerer bildet til å være midtstilt på både x- og y-aksen */
+  top: 30%; /* Valgfritt: Plasserer bildet midt i høyden */
+}
+
+@media (max-width: 1000px) {
+  #Venstrehjørnebilde {
+    width: 14%; /* Gjør bildet mindre */
+    left: 90%; /* Plasser det mer sentralt */
+    top: 10%; /* Sentraliserer høydeposisjonen */
+  }
+}
+
+NormaltBilde {
+  position: auto;
 }
 
 .topnav { /* farge på topnav */
@@ -176,7 +187,6 @@ img {
   display: flex;
     flex-wrap: wrap;        /* Tillat bryting */
     justify-content: center; /* Sentrer boksene horisontalt */
-    align-items: stretch;   /* Strekk boksene til samme høyde */
     gap: 10px;               /* Mellomrom mellom boksene */
     max-width: 100%;
 }
@@ -184,7 +194,7 @@ img {
 .flex-item {
   flex: 1 0 150px;        /* Minimum bredde på 150px, tilpass etter plass */
     max-width: 200px;       /* Maks bredde på 200px */
-    background-color: #007BFF;
+    background-color: #1f4267;
     color: white;
     padding: 10px;          /* Innvendig polstring */
     text-align: center;
@@ -195,6 +205,45 @@ img {
     align-items: center;     /* Sentrer tekst vertikalt */
     text-align: center;
     flex-direction: column; /* Tillater flere tekstlinjer */
+}
+
+.flex-overskrift{ 
+    max-width: auto;   
+    background-color: #204f80;
+    color: white;
+    padding: 10px;          /* Innvendig polstring */
+    text-align: center;
+    border-radius: 90px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* Sentrer tekst horisontalt */
+    align-items: center;     /* Sentrer tekst vertikalt */
+    text-align: center;
+    margin: 30px;
+}
+.flex-bilde { 
+  max-width: auto;
+  display: flex;
+  justify-content: center; /* Sentrer tekst horisontalt */
+  align-items: center;     /* Sentrer tekst vertikalt */
+  text-align: center;
+  margin: 30px;
+}
+
+.flex-itemlang {
+  flex: 1 0 150px;        /* Minimum bredde på 150px, tilpass etter plass */
+  width: 80%;     /* Maks bredde på 200px */
+  background-color: #1f4267;
+  color: white;
+  padding: 10px;          /* Innvendig polstring */
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center; /* Sentrer tekst horisontalt */
+  align-items: center;     /* Sentrer tekst vertikalt */
+  text-align: center;
+  flex-direction: column; /* Tillater flere tekstlinjer */
 }
 
 @media (max-width: 300px) {

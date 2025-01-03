@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(../Bilder/Blabakgrunn.jpg);
   background-size: auto;
@@ -20,12 +21,16 @@ h2 { /* Endringer på h1 */
   text-align: center;
 }
 td, th {
-  border: 5px solid #381e15;
+  border: 5px solid #000000;
   text-align: center;
   padding: 10px;
   font-size: 20px;
-  margin-left: 9%;
+}
 
+table {
+  width: 100%; /* Tabellens bredde */
+  border-collapse: collapse; /* Fjerner mellomrom mellom celler */
+  align-items: center;
 }
 
 #Venstrehjørnebilde {
@@ -43,8 +48,9 @@ td, th {
   }
 }
 
-NormaltBilde {
+#NormaltBilde {
   position: auto;
+  border-radius: 30px;
 }
 
 .topnav { /* farge på topnav */
@@ -213,7 +219,7 @@ NormaltBilde {
     color: white;
     padding: 10px;          /* Innvendig polstring */
     text-align: center;
-    border-radius: 90px;
+    border-radius: 30px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center; /* Sentrer tekst horisontalt */
@@ -231,8 +237,8 @@ NormaltBilde {
 }
 
 .flex-itemlang {
-  flex: 1 0 150px;        /* Minimum bredde på 150px, tilpass etter plass */
-  width: 80%;     /* Maks bredde på 200px */
+  flex: 800px;      
+  width: 90%;   
   background-color: #1f4267;
   color: white;
   padding: 10px;          /* Innvendig polstring */
@@ -242,10 +248,16 @@ NormaltBilde {
   display: flex;
   justify-content: center; /* Sentrer tekst horisontalt */
   align-items: center;     /* Sentrer tekst vertikalt */
+  align-self: center;
   text-align: center;
-  flex-direction: column; /* Tillater flere tekstlinjer */
 }
 
+@media (max-width: 768) {
+  .flex-item {
+    flex-direction: column;
+    height: auto;
+  }
+}
 @media (max-width: 300px) {
   .flex-container {
     justify-content: center; /* Sentraliserer elementene vertikalt når de bryter */
@@ -318,7 +330,7 @@ NormaltBilde {
 .top {
   grid-column: 1/ span 3;
   grid-row: 1;
-  background-color: rgb(177, 145, 110);
+  background-color: #29387d;
   height: auto;
   width: auto;
 }
@@ -334,34 +346,3 @@ NormaltBilde {
   grid-column: 1 / span 3;
   grid-row: 2;
 }
-
-.left1 {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.middle1 {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.right1 {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-.left2 {
-  grid-column: 1;
-  grid-row: 3;
-}
-
-.middle2 {
-  grid-column: 2;
-  grid-row: 3;
-}
-
-.right2 {
-  grid-column: 3;
-  grid-row: 3;
-}
-

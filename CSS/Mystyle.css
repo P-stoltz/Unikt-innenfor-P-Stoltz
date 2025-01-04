@@ -24,7 +24,7 @@ td, th {
   border: 5px solid #000000;
   text-align: center;
   padding: 10px;
-  font-size: 20px;
+  font-size: 13px;
 }
 
 table {
@@ -82,7 +82,7 @@ table {
   position: relative;
 }
 
-#toggle-button {
+#toggle-button { /*Knapp for å åpne sidenav */
   position: fixed;
   top: 10px;
   left: 10px;
@@ -92,7 +92,9 @@ table {
   border: none;
   padding: 10px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 24px;
+  width: 100px;
+  transition: background-color 0.3s ease;
 }
 
 #toggle-button:hover {
@@ -101,18 +103,20 @@ table {
 
 #toggle-button.active {
   background-color: #555; /* Fortsetter å være grå når aktiv */
+  left: 210px;
 }
 
 
 .sidenav {
   width: 200px; /* Full width når utvidet */
-  background-color: #1c285c;
+  background-color: rgba(28, 40, 92, 0.5);  
   height: 100%;
   position: fixed;
   overflow: auto;
   text-align: left;
   transform: translateX(-100%); /* Skjult som standard */
   transition: transform 0.3s ease;
+  
 }
 
 .sidenav.open {
@@ -124,6 +128,7 @@ table {
   color: #ffffff;
   padding: 8px 16px;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .sidenav a:hover {
@@ -161,19 +166,18 @@ table {
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color:#381e15;
+  background-color:#0d1a50;
   color: white;
   text-decoration: none;
   border-radius: 5px;
   text-align: center;
   transition: background-color 0.3s ease;
-  transition: color 0.3s;
 }
 
-/* Change color on hover */
+/* Endrer farge på hover */
 .button:hover {
-  background-color: rgb(250, 207, 162);
-  color: black;
+  background-color:#555;  
+  color: white; 
 }
 
 .clickButton{
@@ -194,12 +198,13 @@ table {
     flex-wrap: wrap;        /* Tillat bryting */
     justify-content: center; /* Sentrer boksene horisontalt */
     gap: 10px;               /* Mellomrom mellom boksene */
-    max-width: 100%;
+    max-width: 90%;
+    margin-left: 5%;
 }
 
 .flex-item {
   flex: 1 0 150px;        /* Minimum bredde på 150px, tilpass etter plass */
-    max-width: 200px;       /* Maks bredde på 200px */
+    max-width: 10000px;       /* Maks bredde på 200px */
     background-color: #1f4267;
     color: white;
     padding: 10px;          /* Innvendig polstring */
@@ -333,6 +338,7 @@ table {
   background-color: #29387d;
   height: auto;
   width: auto;
+  color: white;
 }
 
 .topinv {

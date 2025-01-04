@@ -1,0 +1,58 @@
+/* Container for sidenav and toggle button */
+#sidenav-container {
+  position: relative;
+}
+
+#toggle-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background-color: #1c285c;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  width: 100px;
+  transition: background-color 0.3s ease;
+}
+
+#toggle-button:hover {
+  background-color: #555;
+}
+
+#toggle-button.active {
+  background-color: #555; /* Fortsetter å være grå når aktiv */
+  left: 210px;
+}
+
+
+.sidenav {
+  width: 200px; /* Full width når utvidet */
+  background-color: rgba(28, 40, 92, 0.5);  
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  text-align: left;
+  transform: translateX(-100%); /* Skjult som standard */
+  transition: transform 0.3s ease;
+  
+}
+
+.sidenav.open {
+  transform: translateX(0); /* Vises */
+}
+
+.sidenav a {
+  display: block;
+  color: #ffffff;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.sidenav a:hover {
+  background-color: #555;
+  color: white;
+}

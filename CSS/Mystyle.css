@@ -27,6 +27,16 @@ td, th {
   font-size: 13px;
 }
 
+@media (max-width: 1000px) {
+  h2 {
+    font-size: 60px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
 table {
   width: 100%; /* Tabellens bredde */
   border-collapse: collapse; /* Fjerner mellomrom mellom celler */
@@ -35,24 +45,48 @@ table {
 
 #Venstrehjørnebilde {
   position: absolute; /* Lar deg plassere bildet relativt til nærmeste posisjonerte element eller vinduet */
+  z-index: 1; /* Gjør det slik at andre med position absolute og høyere verdi går over */
   left: 90%; /* Flytter bildet 90% til høyre fra venstre kant av skjermen */
   transform: translate(-50%, -50%); /* Justerer bildet til å være midtstilt på både x- og y-aksen */
   top: 30%; /* Valgfritt: Plasserer bildet midt i høyden */
+  width: 13%;
+}
+
+#Høyrehjørnebilde {
+  position: absolute; /* Lar deg plassere bildet relativt til nærmeste posisjonerte element eller vinduet */
+  z-index: 1; 
+  right: 77%; /* Flytter bildet 90% til venstre fra høyre kant av skjermen */
+  transform: translate(-50%, -50%); /* Justerer bildet til å være midtstilt på både x- og y-aksen */
+  top: 30%; /* Valgfritt: Plasserer bildet midt i høyden */
+  width: 13%;
+  bottom: 0;
 }
 
 @media (max-width: 1000px) {
   #Venstrehjørnebilde {
-    width: 14%; /* Gjør bildet mindre */
-    left: 90%; /* Plasser det mer sentralt */
-    top: 10%; /* Sentraliserer høydeposisjonen */
+    width: 13%; /* Gjør bildet mindre */
+    left: 93%; /* Plasser det mer sentralt */
+    top: 17%;
+  }
+
+  #Høyrehjørnebilde {
+    width: 13%; /* Gjør bildet mindre */
+    right: 80%; /* Plasser det mer sentralt */
+    top: 17%;
   }
 }
 
 #NormaltBilde {
   position: auto;
-  border-radius: 30px;
-  max-width: 100%;
-  height: auto;
+  border-radius: 10%;
+}
+
+@media (max-width: 1200px) {
+  #NormaltBilde {
+    width: 15%; /* Gjør bildet mindre */
+    top: auto; /* Sentraliserer høydeposisjonen */
+
+  }
 }
 
 .topnav { /* farge på topnav */
@@ -114,6 +148,7 @@ table {
   background-color: rgba(28, 40, 92, 0.5);  
   height: 100%;
   position: fixed;
+  z-index: 2;
   overflow: auto;
   text-align: left;
   transform: translateX(-100%); /* Skjult som standard */
@@ -152,7 +187,7 @@ table {
   z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content a { /* forskjellige tabbene i dropdown menyen */
   color: white;
   padding: 12px 16px;
   text-decoration: none;
@@ -176,6 +211,39 @@ table {
   transition: background-color 0.3s ease;
 }
 
+.image-button {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 10px; /* Avrundede hjørner */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
+  overflow: hidden; /* Sikrer at bildet holder seg innenfor rammen */
+  transition: transform 0.2s ease-in-out;
+}
+
+.image-button:hover {
+  transform: scale(1.05); /* Zoom-effekt ved hover */
+}
+
+.image-button img {
+  display: block;
+  width: 240px; /* Sett ønsket bredde */
+  height: auto; /* Behold proporsjoner */
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.image-button:hover img {
+  filter: grayscale(0%);
+  /* Farger tilbake ved hover */
+}
+
+.image-button {
+  border: 3px solid #0d1a50; /* Farge på rammen */
+  border-radius: 10px; /* Avrundede hjørner */
+}
 /* Endrer farge på hover */
 .button:hover {
   background-color:#555;  
@@ -234,13 +302,16 @@ table {
     text-align: center;
     margin: 30px;
 }
+
 .flex-bilde { 
-  max-width: auto;
   display: flex;
   justify-content: center; /* Sentrer tekst horisontalt */
   align-items: center;     /* Sentrer tekst vertikalt */
   text-align: center;
   margin: 30px;
+  flex: 1 1 25%; /* Standardstørrelse: 25% av tilgjengelig plass */
+  max-width: 100px; /* Maks bredde for å begrense størrelsen */
+  text-align: center;
 }
 
 .flex-itemlang {
@@ -273,6 +344,20 @@ table {
 .flex-item {
     flex: 1 1 100%; /* Hver boks tar opp hele bredden */
 }
+
+@media (max-width: 768px) {
+  .flex-bilde {
+    flex: 1 1 40%; /* Reduser bredden til 40% av tilgjengelig plass */
+    max-width: 150px; /* Reduser maks bredde */
+  }
+
+@media (max-width: 480px) {
+  .flex-bilde {
+    flex: 1 1 50%; /* Ytterligere reduksjon for små skjermer */
+    max-width: 120px; /* Enda mindre bredde */
+  }
+}
+
 }
 /* Grid Layout */
 .grid-container {

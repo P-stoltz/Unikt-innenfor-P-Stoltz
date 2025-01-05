@@ -23,7 +23,7 @@ var checkDead = setInterval(function() {
         block.style.animation = "none";
         
         // Vist Game Over-melding på nettsiden
-        gameOverMessage.textContent = "Game Over. Din score: " + Math.floor(counter / 100);
+        gameOverMessage.textContent = "Spill over. Din Poengsum: " + Math.floor(counter / 100);
         gameActive = false; // Deaktiverer poengsum-økningen
         counter = 0;
         

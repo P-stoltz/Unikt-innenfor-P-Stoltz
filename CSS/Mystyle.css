@@ -51,6 +51,8 @@ table {
 #NormaltBilde {
   position: auto;
   border-radius: 30px;
+  max-width: 100%;
+  height: auto;
 }
 
 .topnav { /* farge på topnav */

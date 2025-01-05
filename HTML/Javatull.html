@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javaspill</title>
     <script src="../Javascript/task.js" defer></script> <!-- Linker html med java-fil -->
-    <script src="../Javascript/Nettside.js"></script>
+    <script src="../Javascript/Nettside.js"></script> <!-- Linker html med css-fil -->
     <link rel="stylesheet" href="../CSS/Mystyle.css">
 </head>
  
@@ -14,7 +14,7 @@
     
     <div id="sidenav-container">
         <button id="toggle-button">☰</button>
-        <div class="sidenav"> <!-- Topnav navigasjonsbar -->
+        <div class="sidenav"> <!-- Sidenav navigasjonsbar -->
             <a href="../HTML/Javahjem.html"><p>Tilbake</p></a>
         </div>
     </div>
@@ -24,15 +24,15 @@
         </div>
     </div>
 
-    <div class="flex-container">
-        <div class="flex-item">
-            <input type="text" id="taskInput" placeholder="Enter new task"> <!-- Javacode -->
+    <div class="flex-container"> <!-- Flex-container som inneholder javascript koder -->
+        <div class="flex-item"> <!-- flex-item som inneholder kode som printer ut det du skriver inn-->
+            <input type="text" id="taskInput" placeholder="Enter new task">
             <button id="addTaskButton">Add Task</button>
             <button id="removeTaskButton">Remove Task</button>
             <ul id="taskList"></ul>
         </div>
 
-        <div class="flex-item">
+        <div class="flex-item"> <!-- Flex-item som inneholder stein,saks,papir laget i javascript-->
             <h1>Stein, Saks, Papir</h1>
 
             <label for="choice">Velg ditt trekk:</label>
@@ -47,10 +47,6 @@
             <p id="score">Poeng: Du - 0, Robot - 0</p>
         </div>
     </div>
-    
-    
 
-    <script src="task.js"></script>
 </body>
-
 </html>

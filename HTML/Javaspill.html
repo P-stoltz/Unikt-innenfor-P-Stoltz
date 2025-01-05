@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="../CSS/Mystyle.css"> <!-- Knytter til en ekstern CSS-fil for styling -->
     <link rel="stylesheet" href="../CSS/javaspill.css">
-    <title>Memo-spill</title> <!-- Viser tittelen i fanen-->
+    <title>Hoppe-spill</title> <!-- Viser tittelen i fanen-->
     <script src="../Javascript/Spill.js" defer></script>
     <script src="../Javascript/Nettside.js"></script>
     <meta charset="utf-8"> <!-- Angir tegnsettet til UTF-8 -->
@@ -12,12 +12,12 @@
 <body>
     <div id="sidenav-container"></div>
         <button id="toggle-button">☰</button>
-        <div class="sidenav"> <!-- Topnav navigasjonsbar -->
+        <div class="sidenav"> <!-- Sidenav navigasjonsbar -->
             <a href="../HTML/Javahjem.html"><p>Tilbake</p></a>
         </div>
     </div>
     
-    <div class="game">
+    <div class="game"> <!-- Spill laget i javascript hvor man hopper over den røde firkanten -->
         <div id="character"></div>
         <div id="block"></div>
     </div>
@@ -25,5 +25,4 @@
     <p>Poeng: <span id="scoreSpan">0</span></p>
     <p id="gameOverMessage"></p> <!-- Her vil "Game Over"-meldingen vises -->
 </body>
-<script src="../Javascript/Spill.js"></script>
 </html>

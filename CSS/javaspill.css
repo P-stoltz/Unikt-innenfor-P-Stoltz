@@ -5,7 +5,7 @@
   color: white;
   
 }
-.game{
+.game{ /* Selve spillplassen */
   width: 500px;
   height: 200px;
   border: 1px solid rgb(255, 255, 255);
@@ -13,7 +13,7 @@
   margin-top: 20%;
   padding: 2px;
 }
-#character{
+#character{ /* Karakteren som du spiller som */
   width: 20px;
   height: 50px;
   background-color: rgb(205, 249, 104);
@@ -30,7 +30,7 @@
   100%{top: 150px;}
 }
 
-#block{
+#block{ /* firkanten som du må hoppe over */
   background-color: red;
   width: 20px;
   height: 20px;

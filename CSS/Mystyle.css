@@ -20,7 +20,7 @@ h2 { /* Endringer på h1 */
   font-size: 130px;
   text-align: center;
 }
-td, th {
+td, th { /* endringer på tabell */
   border: 5px solid #000000;
   text-align: center;
   padding: 10px;
@@ -45,7 +45,7 @@ table {
 
 #Venstrehjørnebilde {
   position: absolute; /* Lar deg plassere bildet relativt til nærmeste posisjonerte element eller vinduet */
-  z-index: 1; /* Gjør det slik at andre med position absolute og høyere verdi går over */
+  z-index: 1; 
   left: 90%; /* Flytter bildet 90% til høyre fra venstre kant av skjermen */
   transform: translate(-50%, -50%); /* Justerer bildet til å være midtstilt på både x- og y-aksen */
   top: 30%; /* Valgfritt: Plasserer bildet midt i høyden */
@@ -160,7 +160,7 @@ table {
   transform: translateX(0); /* Vises */
 }
 
-.sidenav a {
+.sidenav a { /* Items inne i sidenav */
   display: block;
   color: #ffffff;
   padding: 8px 16px;
@@ -168,7 +168,7 @@ table {
   transition: background-color 0.3s ease;
 }
 
-.sidenav a:hover {
+.sidenav a:hover { /* Når du svever over itemsene */
   background-color: #555;
   color: white;
 }
@@ -211,7 +211,7 @@ table {
   transition: background-color 0.3s ease;
 }
 
-.image-button {
+.image-button { /* Button som brukes vis du vil at knappen skal være et bilde */
   border: none;
   padding: 0;
   background: none;
@@ -229,7 +229,7 @@ table {
 
 .image-button img {
   display: block;
-  width: 240px; /* Sett ønsket bredde */
+  width: 240px;
   height: auto; /* Behold proporsjoner */
   filter: grayscale(100%);
   transition: filter 0.3s ease-in-out;

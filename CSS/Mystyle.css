@@ -340,9 +340,6 @@ table {
   .flex-container {
     justify-content: center; /* Sentraliserer elementene vertikalt når de bryter */
 }
-
-.flex-item {
-    flex: 1 1 100%; /* Hver boks tar opp hele bredden */
 }
 
 @media (max-width: 768px) {

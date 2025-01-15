@@ -1,0 +1,104 @@
+/* Resetter margin og padding for å hindre forskyvning */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+}
+
+img {
+  width: 185px;
+  height: auto;
+}
+
+/* Bakgrunner */
+.blue-bg {
+  position: fixed;
+  background: url();
+  background-size: cover;
+  background-color: #58aff6;
+  background-image: url(../Bilder/Pant.jpeg);
+  top: 0;
+  height: 400px;
+  width: calc(100vw - 200px); /* Tar høyde for navbar */
+  z-index: -1;
+}
+
+.white-bg {
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  min-height: 500px;
+  margin: 210px 0px;
+  width: calc(100vw - 200px); /* Tar høyde for navbar */
+  height: 100vh;
+  z-index: -1;
+}
+
+/* Justering av innhold */
+.content {
+  position: relative;
+  margin: 250px 10vw; /* Pass på at innhold ikke overlapper navbar */
+  max-width: calc(100vw - 210px); /* Reduser bredde med navbarens bredde */
+  background-color: transparent;
+}
+ 
+
+.shadow {
+  box-shadow: -2px -5px 5px 0px rgba(0,0,0,0.3)
+}
+
+/* Navigasjonsmeny på høyre side */
+.navbar {
+  display: flex;
+  flex-direction: column; /* Vertikal liste */
+  align-items: flex-start;
+  background-color: #333;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0; /* Plasser til høyre */
+  height: 100vh; /* Full høyde */
+  width: 200px; /* Bredde på navbar */
+  z-index: 1000;
+  box-sizing: border-box; /* Unngå breddeproblemer */
+}
+
+
+/* Lenker i navbar */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s;
+  display: block; /* Full bredde per lenke */
+}
+
+.navbar a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+}
